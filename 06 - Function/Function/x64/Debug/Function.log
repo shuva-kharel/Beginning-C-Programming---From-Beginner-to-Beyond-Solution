@@ -1,0 +1,4 @@
+﻿  main.cpp
+E:\DISK E\Media\Codes\Learning C++\Function\main.cpp(78,11): warning C4129: 'N': unrecognized character escape sequence
+E:\DISK E\Media\Codes\Learning C++\Function\main.cpp(98,11): warning C4129: 'N': unrecognized character escape sequence
+  Function.vcxproj -> E:\DISK E\Media\Codes\Learning C++\Function\x64\Debug\Function.exe

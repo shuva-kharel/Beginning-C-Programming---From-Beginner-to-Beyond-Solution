@@ -1,0 +1,4 @@
+﻿  main.cpp
+E:\DISK E\Media\Codes\Learning C++\Characters & Strings\main.cpp(22,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+E:\DISK E\Media\Codes\Learning C++\Characters & Strings\main.cpp(37,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Characters & Strings.vcxproj -> E:\DISK E\Media\Codes\Learning C++\Characters & Strings\x64\Debug\Characters & Strings.exe
