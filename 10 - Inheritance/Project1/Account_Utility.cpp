@@ -107,3 +107,40 @@ void withdraw(std::vector <Trust_Account>& account, double amount) {
 		}
 	}
 }
+
+
+
+// Checking_Account
+void display(const std::vector <Checking_Account>& account) {
+	std::cout << "\n=========DISPLAYING Checking ACCOUNT=========\n";
+	for (const auto& acc : account) {
+		std::cout << acc;
+	}
+}
+
+void deposit(std::vector <Checking_Account>& account, double amount) {
+	std::cout << "\n\n==========DEPOSIT INTO Checking ACCOUNT==========\n";
+	for (auto& acc : account) {
+		if (acc.deposit(amount)) {
+			std::cout << amount << " Depositing\n";
+			std::cout << "NEW BALANCE = " << acc << "\n";
+		}
+		else {
+			std::cout << "\nFAILED TO DEPOSIT IN " << acc << "\n";
+		}
+	}
+}
+
+void withdraw(std::vector <Checking_Account>& account, double amount) {
+	std::cout << "\n\n==========WITHDRAW FROM Checking ACCOUNT==========\n";
+	for (auto acc : account) {
+		if (acc.withdraw(amount) == true) {
+			std::cout << amount << " Withdrawing\n";
+			std::cout << "NEW BALANCE = " << acc << "\n";
+		}
+		else {
+			std::cout << "\n\nFAILED TO WITHDRAW " << amount << " FROM " << acc << "\n";
+			std::cout << "POSSIBLE REASONS:\n1.Insufficent Balance\n";
+		}
+	}
+}

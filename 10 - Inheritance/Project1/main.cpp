@@ -1,9 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Account.h"
-#include "Saving_Account.h"
-#include "Trust_Account.h"
 #include "Account_Utility.h"
 
 int main() {
@@ -42,6 +39,16 @@ int main() {
 	withdraw(trust_accounts, 3000);
 	withdraw(trust_accounts, 1500);
 	withdraw(trust_accounts, 1700);
+
+	std::vector <Checking_Account> checking_accounts;
+	checking_accounts.push_back(Checking_Account{ "Acc1 ", 10 });
+	checking_accounts.push_back(Checking_Account{ "Acc2 ", 20 });
+	checking_accounts.push_back(Checking_Account{ "Acc3 ", 50 });
+
+	display(accounts);
+	deposit(checking_accounts, 1000);
+	withdraw(checking_accounts, 500);
+	withdraw(checking_accounts, 1500);
 
 
 	return 0;
