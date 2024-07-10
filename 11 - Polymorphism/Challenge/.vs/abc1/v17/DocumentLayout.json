@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC895D5-0844-4A20-8C1B-731928D0D6CD}|abc1.vcxproj|D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\I_Printable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3DC895D5-0844-4A20-8C1B-731928D0D6CD}|abc1.vcxproj|solutionrelative:I_Printable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC895D5-0844-4A20-8C1B-731928D0D6CD}|abc1.vcxproj|D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\Account.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3DC895D5-0844-4A20-8C1B-731928D0D6CD}|abc1.vcxproj|solutionrelative:Account.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC895D5-0844-4A20-8C1B-731928D0D6CD}|abc1.vcxproj|D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\Account.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3DC895D5-0844-4A20-8C1B-731928D0D6CD}|abc1.vcxproj|solutionrelative:Account.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC895D5-0844-4A20-8C1B-731928D0D6CD}|abc1.vcxproj|D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3DC895D5-0844-4A20-8C1B-731928D0D6CD}|abc1.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "I_Printable.h",
+              "DocumentMoniker": "D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\I_Printable.h",
+              "RelativeDocumentMoniker": "I_Printable.h",
+              "ToolTip": "D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\I_Printable.h",
+              "RelativeToolTip": "I_Printable.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-23T10:47:59.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Account.cpp",
+              "DocumentMoniker": "D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\Account.cpp",
+              "RelativeDocumentMoniker": "Account.cpp",
+              "ToolTip": "D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\Account.cpp",
+              "RelativeToolTip": "Account.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-23T10:45:35.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Account.h",
+              "DocumentMoniker": "D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\Account.h",
+              "RelativeDocumentMoniker": "Account.h",
+              "ToolTip": "D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\Account.h",
+              "RelativeToolTip": "Account.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-23T10:45:37.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\Media\\Codes\\Learning C\u002B\u002B\\11 - Polymorphism\\Challenge\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-23T10:43:34.187Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

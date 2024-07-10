@@ -1,3 +1,0 @@
-﻿  MyString.cpp
-E:\DISK E\Media\Codes\Learning C++\09 - Operator Overloading\Project1\MyString.cpp(97,1): warning C4172: returning address of local variable or temporary: temp_str
-  Project1.vcxproj -> E:\DISK E\Media\Codes\Learning C++\09 - Operator Overloading\Project1\x64\Debug\Project1.exe
