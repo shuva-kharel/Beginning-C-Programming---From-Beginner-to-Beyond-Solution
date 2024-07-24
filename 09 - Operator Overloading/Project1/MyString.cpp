@@ -1,9 +1,12 @@
-#pragma warning(disable : 4996)
+// Uncomment the below 3 line of codes if you are getting following error: C4996, C26439, C4267
+
 #pragma warning(disable : 26439)
+#pragma warning(disable : 4996)
 #pragma warning(disable : 4267)
 
 #include "MyString.h"
 #include <iostream>
+#include <cstring>
 
 // Null Constructor
 MyString::MyString()
@@ -79,29 +82,107 @@ MyString& MyString::operator+(const MyString& rhs){
 	return *this;
 }
 
-// Subtraction Assignment
-MyString& MyString::operator-(const MyString& rhs){
-	if (rhs.str == nullptr){
-		this->str = new char[1] {'\0'};
-		return *this;
-	}
-	else{
-		size_t buff_size = std::strlen(rhs.str) + 1;
-		char* buff = new char[buff_size];
-		std::cout << "\nSubtraction Assignment\n";
-		for (int i = 0; i < buff_size; i++) {
-			buff[i] = std::tolower(rhs.str[i]);
-		}
-
-		this->str = new char[buff_size];
-		std::strcpy(this->str, buff);
-
-		delete[] buff;
-
-		return *this;
-	}
+MyString& MyString::operator+=(const MyString& rhs){
+	*this = *this + rhs;
+	return *this;
 }
 
+// Subtraction Assignment
+MyString& MyString::operator-(){
+	size_t buff_size = std::strlen(this->str) + 1;
+	char* buff = new char[buff_size];
+	std::cout << "\nSubtraction Assignment\n";
+	std::strcpy(buff, "");
+	for (int i = 0; i < buff_size; i++) {
+		buff[i] = std::tolower(this->str[i]);
+	}
+
+	delete[] this->str;
+	this->str = new char[buff_size];
+	std::strcpy(this->str, buff);
+
+	delete[] buff;
+
+	return *this;
+}
+
+
+bool MyString::operator==(const MyString& rhs){
+	if (this->str == rhs.str)
+		return true;
+	else
+		return false;
+}
+
+
+bool MyString::operator!=(const MyString& rhs){
+	if (this->str != rhs.str)
+		return true;
+	else
+		return false;
+}
+
+
+bool MyString::operator<(const MyString& rhs){
+	size_t this_str_size{ std::strlen(this->str) };
+	size_t rhs_str_size{ std::strlen(rhs.str) };
+	if (this_str_size < rhs_str_size)
+		return true;
+	else
+		return false;
+}
+
+bool MyString::operator<=(const MyString& rhs){
+	size_t this_str_size{ std::strlen(this->str) };
+	size_t rhs_str_size{ std::strlen(rhs.str) };
+	if (this_str_size <= rhs_str_size)
+		return true;
+	else
+		return false;
+}
+
+
+bool MyString::operator>(const MyString& rhs){
+	size_t this_str_size{ std::strlen(this->str) };
+	size_t rhs_str_size{ std::strlen(rhs.str) };
+	if (this_str_size > rhs_str_size)
+		return true;
+	else
+		return false;
+
+}
+
+bool MyString::operator>=(const MyString& rhs){
+	size_t this_str_size{ std::strlen(this->str) };
+	size_t rhs_str_size{ std::strlen(rhs.str) };
+	if (this_str_size >= rhs_str_size)
+		return true;
+	else
+		return false;
+}
+
+
+MyString& MyString::operator*(int n){
+	size_t buff_size{std::strlen(this->str) * n + 1};
+
+	char* buff{ new char[buff_size] };
+	std::strcpy(buff, "");
+	for (size_t i = 0; i < n; i++){
+		std::strcat(buff, this->str);
+	}
+
+	delete[] this->str;
+	this->str = new char[buff_size];
+	std::strcpy(this->str, buff);
+
+	delete[] buff;
+
+	return *this;
+}
+
+MyString& MyString::operator*=(int n){
+	return *this * n;
+}
 
 
 // Display
@@ -121,3 +202,14 @@ int MyString::get_length() const {
 const char* MyString::get_str() const {
 	return str;
 };
+
+std::ostream& operator<<(std::ostream& os, const MyString& rhs){
+	os << rhs.str;
+	return os;
+}
+
+std::istream& operator>>(std::istream& in, MyString& rhs){
+	rhs.str = new char[1000];
+	in >> rhs.str;
+	return in;
+}
